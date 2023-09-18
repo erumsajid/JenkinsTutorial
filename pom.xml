@@ -11,8 +11,12 @@
 	<groupId>com.example</groupId>
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>docker demo</name>
 	<description>Demo project for Docker Spring Boot</description>
+	<modules>
+		<module>api</module>
+	</modules>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -55,7 +59,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>docker-jenkins-integration-sample</finalName>
+		<finalName>docker-jenkins-integration-multimodule-sample</finalName>
 	</build>
 
 </project>
